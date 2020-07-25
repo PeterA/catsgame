@@ -53,3 +53,7 @@ ol, ul {
   margin-left: 20px;
 }
 
+.game-info .highlight {
+  font-weight: bold;
+}
+
