@@ -32,6 +32,10 @@ ol, ul {
   width: 80px;
 }
 
+.square.highlight {
+  color: blue;
+}
+
 .square:focus {
   outline: none;
 }
