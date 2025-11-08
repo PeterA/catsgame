@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './main.css';
 
 function Square(props) {
   const className = 'square' + (props.highlight ? ' highlight' : '');
