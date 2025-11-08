@@ -101,7 +101,7 @@ class Game extends React.Component {
       const desc = move ?
         'Go to move #' + move + ' (Played in Row: ' + markedRow + " Column: " + markedColumn + ')' :
         'Go to game start';
-      const moveClass = (this.state.stepNumber == move) ? "highlight" : "";
+      const moveClass = (this.state.stepNumber === move) ? "highlight" : "";
       return (
         <li key={move}>
           <button 
