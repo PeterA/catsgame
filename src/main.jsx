@@ -120,6 +120,9 @@ class Game extends React.Component {
     }
     return (
       <div className="game">
+        <div className="game-left-panel">
+          <img src="./catsgame.png" width="150px;"></img>
+        </div>
         <div className="game-board">
           <Board 
             squares={current.squares}
