@@ -99,8 +99,8 @@ class Game extends React.Component {
       const markedRow = 1 + Math.floor(markedSquare / 3);
       const markedColumn = 1 + (markedSquare % 3);
       const desc = move ?
-        'Go to move #' + move + ' (Played in Row: ' + markedRow + " Column: " + markedColumn + ')' :
-        'Go to game start';
+        'Move #' + move + ' (Row: ' + markedRow + " Column: " + markedColumn + ')' :
+        'Game start';
       const moveClass = (this.state.stepNumber === move) ? "highlight" : "";
       return (
         <li key={move}>
@@ -124,16 +124,17 @@ class Game extends React.Component {
           <img src="./catsgame.png" width="150px;"></img>
         </div>
         <div className="game-board">
+          <h2>{status}</h2>
           <Board 
             squares={current.squares}
             winningSquares={win.winningSquares ? win.winningSquares : []}
             onClick={(i) => this.handleClick(i)}
           />
+           <div class="footer"><button onClick={() => this.handleReset()}>Start a New Game</button></div>
         </div>
-        <div className="game-info">
-          <div>{status}</div>
+        <div className="game-right-panel">
+          <h3>Game Log</h3>
           <ol>{moves}</ol>
-          <div><button onClick={() => this.handleReset()}>Start a New Game</button></div>
         </div>
       </div>
     );
