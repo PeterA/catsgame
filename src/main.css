@@ -1,5 +1,6 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
+  font-family: "Century Gothic", Futura, sans-serif;
+  font-size: 14px;
   margin: 20px;
 }
 
@@ -19,8 +20,8 @@ ol, ul {
   float: left;
   font-size: 40px;
   font-weight: bold;
-  line-height: 34px;
   height: 80px;
+  line-height: 34px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
@@ -51,11 +52,11 @@ ol, ul {
 }
 
 .game-left-panel button {
-  padding: 10px;
-  margin-top: 15px;
   background-color: rgb(167, 64, 7);
   color: rgb(238, 222, 181);
   font-weight: bold;
+  margin-top: 15px;
+  padding: 10px;
 }
 
 .game-board {
@@ -66,16 +67,16 @@ ol, ul {
 .game-status {
   background: rgb(190, 143, 113); 
   border: 2px solid rgb(26, 24, 20);
-  padding: 7px;
-  margin-right: -1px;
   font-size: large;
+  font-weight: bold;
+  margin-right: -1px;
   margin-top: -2px;
-   font-weight: bold;
+  padding: 7px;
 }
 
 .game-right-panel {
-  width: 300px;
   font-size: smaller;
+  width: 300px;
 }
 
 .game-right-panel li {

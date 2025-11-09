@@ -121,7 +121,7 @@ class Game extends React.Component {
     return (
       <div className="game">
         <div className="game-left-panel">
-          <img src="./catsgame.png" width="150px;"></img><br />
+          <img src="/catsgame.png" width="150" alt="Cat's Game Logo" /><br />
           <button onClick={() => this.handleReset()}>Start a New Game</button> 
         </div>
         <div className="game-board">
