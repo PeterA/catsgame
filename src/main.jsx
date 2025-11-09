@@ -114,26 +114,26 @@ class Game extends React.Component {
 
     let status;
     if (win.winner) {
-      status = 'Winner: ' + win.winner;
+      status = win.winner + " Wins!";
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = (this.state.xIsNext ? 'X' : 'O') + '\'s Turn';
     }
     return (
       <div className="game">
         <div className="game-left-panel">
-          <img src="./catsgame.png" width="150px;"></img>
+          <img src="./catsgame.png" width="150px;"></img><br />
+          <button onClick={() => this.handleReset()}>Start a New Game</button> 
         </div>
         <div className="game-board">
-          <h2>{status}</h2>
           <Board 
             squares={current.squares}
             winningSquares={win.winningSquares ? win.winningSquares : []}
             onClick={(i) => this.handleClick(i)}
           />
-           <div class="footer"><button onClick={() => this.handleReset()}>Start a New Game</button></div>
+          <div className="game-status">{status}</div>
         </div>
         <div className="game-right-panel">
-          <h3>Game Log</h3>
+          <i>Game Log</i>
           <ol>{moves}</ol>
         </div>
       </div>

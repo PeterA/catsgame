@@ -13,13 +13,9 @@ ol, ul {
   display: table;
 }
 
-.status {
-  margin-bottom: 10px;
-}
-
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background: rgb(238, 222, 181);
+  border: 2px solid rgb(26, 24, 20);
   float: left;
   font-size: 40px;
   font-weight: bold;
@@ -33,7 +29,7 @@ ol, ul {
 }
 
 .square.highlight {
-  color: blue;
+  color: rgba(167, 64, 7);
 }
 
 .square:focus {
@@ -50,18 +46,42 @@ ol, ul {
   justify-content: center;
 }
 
-.game-board {
-  margin: 0px 20px;
+.game-left-panel {
+  text-align: center;
 }
 
-.game-board .footer {
-  margin-top: 10px;
+.game-left-panel button {
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgb(167, 64, 7);
+  color: rgb(238, 222, 181);
+  font-weight: bold;
+}
+
+.game-board {
+  margin: 0px 40px;
+  text-align: center;
+}
+
+.game-status {
+  background: rgb(190, 143, 113); 
+  border: 2px solid rgb(26, 24, 20);
+  padding: 7px;
+  margin-right: -1px;
+  font-size: large;
+  margin-top: -2px;
+   font-weight: bold;
+}
+
+.game-right-panel {
+  width: 300px;
+  font-size: smaller;
 }
 
 .game-right-panel li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .game-right-panel .highlight {
-  background-color: lightgreen;
+  background-color: darkgray;
 }
